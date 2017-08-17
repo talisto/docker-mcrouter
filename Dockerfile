@@ -21,6 +21,8 @@ RUN             cd $MCROUTER_DIR/repo/mcrouter/mcrouter/scripts && \
 
 RUN             rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN             mkdir -p /var/spool/mcrouter
+
 ENV             DEBIAN_FRONTEND newt
 
 ENTRYPOINT      [ "mcrouter" ]
