@@ -23,4 +23,5 @@ RUN             rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV             DEBIAN_FRONTEND newt
 
-CMD ["mcrouter", "--help"]
+ENTRYPOINT      [ "mcrouter" ]
+CMD             [ "--help" ]
