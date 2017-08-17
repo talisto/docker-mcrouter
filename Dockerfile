@@ -16,7 +16,7 @@ RUN             mkdir -p $MCROUTER_DIR/repo && \
 
 RUN             cd $MCROUTER_DIR/repo/mcrouter/mcrouter/scripts && \
                 ./install_ubuntu_16.04.sh $MCROUTER_DIR && \
-                ./clean_ubuntu_16.04.sh $MCROUTER_DIR && rm -rf $MCROUTER_DIR/repo && \
+                ./clean_ubuntu_14.04.sh $MCROUTER_DIR && rm -rf $MCROUTER_DIR/repo && \
                 ln -s $MCROUTER_DIR/install/bin/mcrouter /usr/local/bin/mcrouter
 
 RUN             rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
