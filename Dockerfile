@@ -1,4 +1,4 @@
-FROM            ubuntu:16.04
+FROM            ubuntu:14.04
 
 MAINTAINER      Talisto <https://github.com/talisto>
 
@@ -15,7 +15,7 @@ RUN             mkdir -p $MCROUTER_DIR/repo && \
                 git clone --branch release-$MCROUTER_RELEASE $MCROUTER_REPO
 
 RUN             cd $MCROUTER_DIR/repo/mcrouter/mcrouter/scripts && \
-                ./install_ubuntu_16.04.sh $MCROUTER_DIR && \
+                ./install_ubuntu_14.04.sh $MCROUTER_DIR && \
                 ./clean_ubuntu_14.04.sh $MCROUTER_DIR && rm -rf $MCROUTER_DIR/repo && \
                 ln -s $MCROUTER_DIR/install/bin/mcrouter /usr/local/bin/mcrouter
 
