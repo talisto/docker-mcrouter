@@ -2,4 +2,4 @@
 
 Docker container for Facebook's Mcrouter: https://github.com/facebook/mcrouter
 
-Based on Mcrouter Version 36 (Apr 18, 2017)
+Based on Mcrouter Version 39 (Dec 15, 2018)
