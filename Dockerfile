@@ -4,7 +4,7 @@ MAINTAINER      Talisto <https://github.com/talisto>
 
 ENV             MCROUTER_DIR            /usr/local/mcrouter
 ENV             MCROUTER_REPO           https://github.com/facebook/mcrouter.git
-ENV             MCROUTER_RELEASE        39-0
+ENV             MCROUTER_RELEASE        41-0
 ENV             DEBIAN_FRONTEND         noninteractive
 
 RUN             apt-get update && \
